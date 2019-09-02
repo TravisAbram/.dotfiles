@@ -30,6 +30,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'gabrielelana/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'edkolev/tmuxline.vim'
 " Plugin 'freitass/todo.txt-vim'
 " Themes
 Plugin 'joshdick/onedark.vim'
@@ -97,6 +99,10 @@ colorscheme onedark
 let g:onedark_hide_endofbuffer = 1
 let g:onedark_terminal_italics=1
 
+
+" Enable mouse support
+set mouse=n
+set ttymouse=xterm2
 
 " Enables syntax highlighting
 syntax on
