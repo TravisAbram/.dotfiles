@@ -32,6 +32,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'freitass/todo.txt-vim'
 " Themes
 Plugin 'joshdick/onedark.vim'
