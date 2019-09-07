@@ -10,32 +10,20 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
-Plugin 'gabrielelana/vim-markdown'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'freitass/todo.txt-vim'
-" Themes
 Plugin 'joshdick/onedark.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'yuttie/comfortable-motion.vim'
+Plugin 'ryanoasis/vim-devicons'
+" Plugin 'reedes/vim-pencil'
+" Plugin 'plasticboy/vim-markdown'
+" Plugin 'gabrielelana/vim-markdown'
+" Plugin 'freitass/todo.txt-vim'
 " Plugin 'rakr/vim-one'
 
 " All of your Plugins must be added before the following line
@@ -75,7 +63,7 @@ endif
 " endif
 
 " Polyglot Options
-let g:polyglot_disabled = ["markdown"]
+" let g:polyglot_disabled = ["markdown"]
 
 
 " Airline options
@@ -91,7 +79,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 
 " Markdown extension options
-let g:markdown_enable_spell_checking = 0
+" let g:markdown_enable_spell_checking = 0
 
 
 " Sets the colorscheme
@@ -158,6 +146,13 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
 
+" Open .vimrc in new buffer
+nmap <leader>v :e ~/.vimrc<CR>
+" Re-source .vimrc
+nmap <leader>r :source %<CR>
+" Delete buffer
+nmap <leader>d :bd<CR>
+
 " tabstop:          Width of tab character
 " softtabstop:      Fine tunes the amount of white space to be added
 " shiftwidth        Determines the amount of whitespace to add in normal mode
@@ -166,3 +161,36 @@ set tabstop     =4
 set softtabstop =4
 set shiftwidth  =4
 set expandtab
+
+" Shift to the next round tab stop.
+set shiftround
+
+" Launch NERDTree
+" map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :Vex<CR>
+
+" Disable NERDTREE C-j/C-k keys
+" let g:NERDTreeMapJumpNextSibling = '<Nop>'
+" let g:NERDTreeMapJumpPrevSibling = '<Nop>'
+
+" Home & End should be placed next to each other
+nnoremap - $
+
+" Enable Highlight Search
+" set hlsearch
+" Highlight while search
+set incsearch
+" Case Insensitivity Pattern Matching
+set ignorecase
+" Overrides ignorecase if pattern contains upcase
+set smartcase
+" Keep search results at the center of screen
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
+" Press <leader> Enter to remove search highlights
+" noremap <silent> <leader><cr> :noh<cr>
