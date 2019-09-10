@@ -13,13 +13,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
-" Plugin 'scrooloose/nerdtree'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'joshdick/onedark.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'tpope/vim-commentary'
+" Plugin 'scrooloose/nerdtree'
 " Plugin 'reedes/vim-pencil'
 " Plugin 'plasticboy/vim-markdown'
 " Plugin 'gabrielelana/vim-markdown'
@@ -113,10 +114,10 @@ set linebreak
 imap jk <Esc>
 
 " Remap for easier window switching among splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
 
 " More naturally sets the new split below or to the right
 set splitbelow
@@ -131,7 +132,7 @@ set hidden
 
 " To open a new empty buffer
 " This replaces :tabnew which I used to bind to this mapping
-nmap <leader>T :enew<cr>
+nmap <leader>n :enew<cr>
 
 " Move to the next buffer
 nmap <leader>l :bnext<CR>
@@ -147,7 +148,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 " Open .vimrc in new buffer
-nmap <leader>v :e ~/.vimrc<CR>
+nmap <leader>v :e ~/.dotfiles/vim/.vimrc<CR>
 " Re-source .vimrc
 nmap <leader>r :source %<CR>
 " Delete buffer
