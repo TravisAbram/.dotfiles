@@ -116,3 +116,14 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode)
 # alias ls='lsd --group-dirs first'
 
 export PATH=$HOME/bin:$PATH
+export EDITOR=nvim
+
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Vi mode
+bindkey -v
+# Kill the lag going to Vi mode
+export KEYTIMEOUT=20
+# Keybind to go into cmd mode without hitting escape
+bindkey -M viins 'jk' vi-cmd-mode
+ctags=/usr/local/bin/ctags
