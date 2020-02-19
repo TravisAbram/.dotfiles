@@ -283,7 +283,7 @@ nmap H :bprevious<CR>
 " Show all open buffers and their status
 " nmap <leader>bl :ls<CR>
 " Open .vimrc in new buffer
-nmap <leader>v :e ~/.config/nvim/init.vim<CR>
+nmap <leader>v :e ~/.dotfiles/nvim/.config/nvim/init.vim<CR>
 " Open todo.txt in new buffer
 nmap <leader>t :e ~/Dropbox/todo/todo.txt<CR>
 " Open zsh config
