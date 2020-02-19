@@ -107,7 +107,12 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable virtualenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode)
 
-alias vi='vim'
-alias ls='exa -lh --group-directories-first'
+# POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+# POWERLEVEL9K_SHORTEN_DELIMITER=""
+# POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
+
+# alias vi='vim'
+# alias ls='exa -h --group-directories-first --git'
+# alias ls='lsd --group-dirs first'
 
 export PATH=$HOME/bin:$PATH
