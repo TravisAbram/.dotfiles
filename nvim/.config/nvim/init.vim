@@ -287,7 +287,7 @@ nmap <leader>v :e ~/.dotfiles/nvim/.config/nvim/init.vim<CR>
 " Open todo.txt in new buffer
 nmap <leader>t :e ~/Dropbox/todo/todo.txt<CR>
 " Open zsh config
-nmap <leader>z :e ~/.zshrc<CR>
+nmap <leader>z :e ~/.dotfiles/zsh/.zshrc<CR>
 " Re-source .vimrc
 nmap <leader>rs :source %<CR>
 " Delete buffer
