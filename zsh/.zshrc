@@ -104,8 +104,8 @@ source $ZSH/oh-my-zsh.sh
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable virtualenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode)
 
 alias vi='vim'
 alias ls='exa -lh --group-directories-first'
