@@ -17,7 +17,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'Yggdroot/indentLine'
 Plug 'psliwka/vim-smoothie'
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
 Plug 'edkolev/tmuxline.vim'
 Plug 'freitass/todo.txt-vim'
 Plug 'mengelbrecht/lightline-bufferline'
@@ -152,7 +152,8 @@ let g:lightline = {
 	\             [ 'lightline_hunks'],
 	\             [ 'filetype',],
 	\             [ 'readonly', ] ],
-	\   'right':[ [ 'status_diagnostic',],
+	\   'right':[ [ 'percent', 'lineinfo'],
+	\             [ 'status_diagnostic',],
 	\             [ 'fileformat']],
 	\ },
 	\ 'component_function': {
@@ -588,19 +589,19 @@ let g:indentLine_char = ''
 
 " EasyMotion settings
 
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
+" let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Jump to anywhere you want with minimal keystrokes, with just one key
 " binding.
  " `s{char}{label}`
- nmap s <Plug>(easymotion-overwin-f2)
+ " nmap s <Plug>(easymotion-overwin-f2)
  " or
  " `s{char}{char}{label}`
  " Need one more keystroke, but on average, it may be more comfortable.
  " nmap s <Plug>(easymotion-overwin-f2)
 
  " Turn on case-insensitive feature
- let g:EasyMotion_smartcase = 1
+ " let g:EasyMotion_smartcase = 1
 
  " JK motions: Line motions
  " map <Leader>j <Plug>(easymotion-j)
@@ -611,15 +612,15 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " nmap <Leader>f <Plug>(easymotion-overwin-f)
 
 " s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
+" nmap s <Plug>(easymotion-overwin-f2)
 
 " Move to line
-map <Leader>l <Plug>(easymotion-lineforward)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-map <Leader>h <Plug>(easymotion-linebackward)
+" map <Leader>l <Plug>(easymotion-lineforward)
+" map <Leader>j <Plug>(easymotion-j)
+" map <Leader>k <Plug>(easymotion-k)
+" map <Leader>h <Plug>(easymotion-linebackward)
 
-let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+" let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 " Gif config
 " map  / <Plug>(easymotion-sn)
 " omap / <Plug>(easymotion-tn)
